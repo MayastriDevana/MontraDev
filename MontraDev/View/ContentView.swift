@@ -13,8 +13,15 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
+            
             Text("Hello, world!")
+                .font(.system(size: 26))
+            
+            Text("ini custom font")
+                .font(.custom("Inter", size: 26))
+                .fontWeight(.bold)
         }
+        
         .padding()
     }
 }
